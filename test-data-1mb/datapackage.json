@@ -10,7 +10,7 @@
   "resources": [
     {
       "format": "csv",
-      "name": "population",
+      "name": "test-data-1mb",
       "path": "test-data-1mb.csv",
       "schema": {
         "fields": [
