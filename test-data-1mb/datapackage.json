@@ -1,0 +1,45 @@
+{
+  "description": "Population figures for countries, regions (e.g. Asia) and the world. Data comes originally from World Bank and has been converted into standard CSV.",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "url": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "name": "population",
+  "resources": [
+    {
+      "format": "csv",
+      "name": "population",
+      "path": "test-data-1mb.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "World Bank",
+      "web": "http://data.worldbank.org/indicator/SP.POP.TOTL",
+      "title": "World Bank"
+    }
+  ],
+  "title": "Population figures for countries, regions (e.g. Asia) and the world"
+}
