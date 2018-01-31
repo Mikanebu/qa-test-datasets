@@ -1,0 +1,71 @@
+{
+  "description": "test-data-1000rows",
+  "last_updated": "2012-10-18",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "url": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "name": "test-data-1000rows",
+  "resources": [
+    {
+      "format": "csv",
+      "name": "test-data-1000rows",
+      "path": "test-data-1000rows.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "test-data-100kb",
+      "web": "http://data.worldbank.org",
+      "title": "test-data-100kb"
+    }
+  ],
+  "version": "2011",
+  "views": [
+    {
+      "name": "test-data-1000rows",
+      "title": "test-data-1000rows",
+      "specType": "simple",
+      "resources": [
+        {
+          "name": "test-data-1000rows",
+          "transform": [
+            {
+              "type": "filter",
+              "expression": "data['Country Code'] === 'WLD'"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "type": "line",
+        "group": "Year",
+        "series": [
+          "Value"
+        ]
+      }
+    }
+  ]
+}
