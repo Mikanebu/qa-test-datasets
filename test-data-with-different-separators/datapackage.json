@@ -1,0 +1,176 @@
+{
+  "description": "test-data-for-different-separators",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "url": "http://opendatacommons.org/licenses/pddl/"
+    }
+  ],
+  "name": "test-data-for-different-separators",
+  "resources": [
+    {
+      "format": "csv",
+      "name": "test-comma",
+      "path": "test-comma.csv",
+      "delimiter": ",",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "format": "csv",
+      "name": "test-semicolon",
+      "path": "test-semicolon.csv",
+      "delimiter": ";",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "format": "csv",
+      "name": "test-colon",
+      "path": "test-colon.csv",
+      "delimiter": ":",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "format": "csv",
+      "name": "test-carets",
+      "path": "test-carets.csv",
+      "delimiter": "^",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "format": "csv",
+      "name": "test-pipes",
+      "path": "test-pipes.csv",
+      "delimiter": "|",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "format": "csv",
+      "name": "test-tab",
+      "path": "test-tab.csv",
+      "delimiter": "\t",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country Name",
+            "type": "string"
+          },
+          {
+            "name": "Country Code",
+            "type": "string"
+          },
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "test-data-for-different-separators",
+      "web": "test-data-for-different-separators",
+      "title": "test-data-for-different-separators"
+    }
+  ],
+  "title": "test-data-for-different-separators"
+}
